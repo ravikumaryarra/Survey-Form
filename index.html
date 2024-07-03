@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="name">Enter Your First Name: 
+          <input id="name" name="name" type="text" required placeholder="Enter your name" />
+        </label>
+        <label id="email-label" for="email">Enter Your Email: 
+          <input id="email" name="email" type="email" required placeholder="Enter your email" />
+        </label>
+        <label id="number-label" for="number">Enter Your Number: 
+          <input id="number" name="number" type="number" required min="0" max="9999999999" placeholder="Enter your number" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Are you a student: </label>
+        <select id="dropdown" name="dropdown">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+      </fieldset>
+      <fieldset>
+        <label for="interests">What are your interests:</label>
+        <input type="checkbox" id="coding" name="interests" value="coding" />
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="music" name="interests" value="music" />
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interests" value="sports" />
+        <label for="sports">Sports</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
